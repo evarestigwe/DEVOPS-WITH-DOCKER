@@ -1,0 +1,11 @@
+ubuntu@ip-172-31-36-134:~$ docker ps -a
+CONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS                        PORTS      NAMES
+c0190cb0a0dc   wordpress   "docker-entrypoint.s…"   25 minutes ago   Exited (0) 6 seconds ago                 relaxed_blackwell
+929766b45733   tomcat      "catalina.sh run"        26 minutes ago   Exited (143) 22 minutes ago              nifty_black
+93b83ddcc4b5   tomcat      "-d"                     26 minutes ago   Created                       8080/tcp   happy_kepler
+bc49a82231f1   tomcat      "catalina.sh run"        27 minutes ago   Exited (130) 26 minutes ago              clever_wright
+1cbe7e5ba355   ubuntu      "/bin/bash"              29 minutes ago   Exited (0) 29 minutes ago                crazy_spence
+fa975e11f8ba   nginx       "/docker-entrypoint.…"   45 minutes ago   Exited (0) 23 minutes ago                hopeful_vaughan
+b3db1ab8d204   nginx       "/docker-entrypoint.…"   47 minutes ago   Exited (0) 45 minutes ago                hungry_jennings
+ubuntu@ip-172-31-36-134:~$
+
