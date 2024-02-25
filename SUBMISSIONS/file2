@@ -1,0 +1,50 @@
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$ ^C
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$ docker images
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+tomcat        latest    549891b60da9   4 days ago     455MB
+nginx         latest    e4720093a3c1   11 days ago    187MB
+ubuntu        latest    3db8720ecbf5   12 days ago    77.9MB
+wordpress     latest    2fc2a7b04129   3 weeks ago    739MB
+hello-world   latest    d2c94e258dcb   9 months ago   13.3kB
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$ docker images prune
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$
+###
+
+
+
+
+######docker ps -a
+ubuntu@ip-172-31-36-134:~$ docker ps -a
+CONTAINER ID   IMAGE       COMMAND                  CREATED          STATUS                        PORTS      NAMES
+c0190cb0a0dc   wordpress   "docker-entrypoint.s…"   25 minutes ago   Exited (0) 6 seconds ago                 relaxed_blackwell
+929766b45733   tomcat      "catalina.sh run"        26 minutes ago   Exited (143) 22 minutes ago              nifty_black
+93b83ddcc4b5   tomcat      "-d"                     26 minutes ago   Created                       8080/tcp   happy_kepler
+bc49a82231f1   tomcat      "catalina.sh run"        27 minutes ago   Exited (130) 26 minutes ago              clever_wright
+1cbe7e5ba355   ubuntu      "/bin/bash"              29 minutes ago   Exited (0) 29 minutes ago                crazy_spence
+fa975e11f8ba   nginx       "/docker-entrypoint.…"   45 minutes ago   Exited (0) 23 minutes ago                hopeful_vaughan
+b3db1ab8d204   nginx       "/docker-entrypoint.…"   47 minutes ago   Exited (0) 45 minutes ago                hungry_jennings
+ubuntu@ip-172-31-36-134:~$
+#######
+
+
+####
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$ docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+c0190cb0a0dcb066693fadebfbf1f523d9f1b2479425fe33914a0b4900a6b520
+929766b457330337f910cd9ba0ae2c3c02fc187c413a4e9e6bbe06f39dcf13b5
+93b83ddcc4b5eb7ac72eae27e32a7cce975554491a507834c9830be20e078ed8
+bc49a82231f1cdc4346227c455280334045603a7e087faaff14cd12152578b13
+1cbe7e5ba3552b9448f7a1e320511b3bdd2d33ae38609da083f89d3e80ecbe69
+fa975e11f8ba6979168bdf10dacaeb10d39c9366fc787c5bdc9e63c66081ce59
+b3db1ab8d204f2507398909f8157bac87d81f7ce85c4880562a439617ae63693
+
+Total reclaimed space: 12.42kB
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$ ^C
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ip-172-31-36-134:~/DEVOPS-WITH-DOCKER/SUBMISSIONS$
+
+
