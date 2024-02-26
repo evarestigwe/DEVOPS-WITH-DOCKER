@@ -1,0 +1,8 @@
+Last login: Mon Feb 26 07:56:17 2024 from 102.90.57.238
+ubuntu@ip-172-31-36-134:~$ docker run -it devopsdockeruh/pull_exercise
+Give me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+ubuntu@ip-172-31-36-134:~$
+
